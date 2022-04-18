@@ -16,7 +16,7 @@ func GetRedditJson(sub string, limit int, timeframe string, sort string) Posting
 
 	preparedRequest, err := http.NewRequest("GET", baseUrl, nil)
 	if err != nil {
-		fmt.Printf("error assembling request: %v\n", err)
+		fmt.Printf("error asssembling request: %v\n", err)
 	}
 
 	preparedRequest.Header.Set("User-Agent", "not golang")
