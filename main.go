@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-
 	//Using godotenv to grab cookie data(and maybe entry credentials, dont know yet)
 	//While Reddit does not like this type of scraping, it makes it easier to use as you dont need to set up oauth2
 	if err := godotenv.Load(); err != nil {
